@@ -1,0 +1,200 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>AhtmlFormData</servlet-name>
+        <servlet-class>AhtmlFormData</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AhtmlFormData</servlet-name>
+        <url-pattern>/AhtmlFormData</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>BLogin</servlet-name>
+        <servlet-class>BLogin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BLogin</servlet-name>
+        <url-pattern>/BLogin</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>BProfile</servlet-name>
+        <servlet-class>BProfile</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BProfile</servlet-name>
+        <url-pattern>/BProfile</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>CConfig</servlet-name>
+        <servlet-class>CConfig</servlet-class>
+        <init-param>
+        	<param-name>name</param-name>
+        	<param-value>Aashka</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CConfig</servlet-name>
+        <url-pattern>/CConfig</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>DContext</servlet-name>
+    	<servlet-class>DContext</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>DContext</servlet-name>
+    	<url-pattern>/DContext</url-pattern>
+    </servlet-mapping>
+    <context-param>
+    	<param-name>name</param-name>
+    	<param-value>Shah</param-value>
+    </context-param>
+	
+	<servlet>
+    	<servlet-name>EAppAttr</servlet-name>
+    	<servlet-class>EAppAttr</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>EAppAttr</servlet-name>
+    	<url-pattern>/EAppAttr</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    	<servlet-name>ERequestAttrAppAttr</servlet-name>
+    	<servlet-class>ERequestAttrAppAttr</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>ERequestAttrAppAttr</servlet-name>
+    	<url-pattern>/ERequestAttrAppAttr</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>FLogin</servlet-name>
+    	<servlet-class>FLogin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>FLogin</servlet-name>
+    	<url-pattern>/FLogin</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    	<servlet-name>FLogout</servlet-name>
+    	<servlet-class>FLogout</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>FLogout</servlet-name>
+    	<url-pattern>/FLogout</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    	<servlet-name>FProfile</servlet-name>
+    	<servlet-class>FProfile</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>FProfile</servlet-name>
+    	<url-pattern>/FProfile</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>GLogin</servlet-name>
+    	<servlet-class>GLogin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>GLogin</servlet-name>
+    	<url-pattern>/GLogin</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    	<servlet-name>GLogout</servlet-name>
+    	<servlet-class>GLogout</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>GLogout</servlet-name>
+    	<url-pattern>/GLogout</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    	<servlet-name>GProfile</servlet-name>
+    	<servlet-class>GProfile</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>GProfile</servlet-name>
+    	<url-pattern>/GProfile</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>HServlet</servlet-name>
+    	<servlet-class>HServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>HServlet</servlet-name>
+    	<url-pattern>/HServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>IServlet</servlet-name>
+    	<servlet-class>IServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>IServlet</servlet-name>
+    	<url-pattern>/IServlet</url-pattern>
+    </servlet-mapping>
+    
+    <filter>
+    	<filter-name>JFilter</filter-name>
+    	<filter-class>JFilter</filter-class>
+    </filter>
+    <filter-mapping>
+    	<filter-name>JFilter</filter-name>
+    	<url-pattern>/JServlet</url-pattern>
+    </filter-mapping>
+    
+    <servlet>
+	    <servlet-name>JServlet</servlet-name>
+	    <servlet-class>JServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	    <servlet-name>JServlet</servlet-name>
+	    <url-pattern>/JServlet</url-pattern>
+	</servlet-mapping>
+	
+	<filter>
+    	<filter-name>KMembershipFilter</filter-name>
+    	<filter-class>KMembershipFilter</filter-class>
+    </filter>
+    <filter-mapping>
+    	<filter-name>KMembershipFilter</filter-name>
+    	<url-pattern>/KDashboard</url-pattern>
+    </filter-mapping>
+    
+    <servlet>
+	    <servlet-name>KDashboard</servlet-name>
+	    <servlet-class>KDashboard</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	    <servlet-name>KDashboard</servlet-name>
+	    <url-pattern>/KDashboard</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	    <servlet-name>LLogin</servlet-name>
+	    <servlet-class>LLogin</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	    <servlet-name>LLogin</servlet-name>
+	    <url-pattern>/LLogin</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	    <servlet-name>LWelcomePage</servlet-name>
+	    <servlet-class>LWelcomePage</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	    <servlet-name>LWelcomePage</servlet-name>
+	    <url-pattern>/LWelcomePage</url-pattern>
+	</servlet-mapping>
+    
+</web-app>
